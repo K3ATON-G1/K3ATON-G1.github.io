@@ -4,7 +4,7 @@ title                    : "Academic Portfolio"
 title_separator          : "-"
 name                     : "Keaton Green"
 description              : "Keaton Green's academic portfolio"  
-url                      : "https://k3aton-g1.github.io/k3aton-g1.github.io"
+url                      : "https://k3aton-g1/k3aton-g1.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
