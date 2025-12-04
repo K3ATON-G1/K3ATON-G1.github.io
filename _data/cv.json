@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Keaton C Green",
+    "email": "Keatong1@umbc.edu",
+    "phone": "(719)330-6690",
+    "website": "https://K3ATON-G1.github.io",
+    "summary": "Currently a Master's Fellow at the University of Maryland, Baltimore County, studying Geography and Environmental Systems and a Master's certificate in Geographic Information Systems. As part of the fellowship, Keaton currently holds a position with the capital team of Healthy Neighborhoods Inc.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "address": "Baltimore, MD.",
+      "postalCode": "21223",
+      "city": "Baltimore",
       "countryCode": "US",
       "region": ""
     },
@@ -30,14 +30,14 @@
       }
     ]
   },
-  "work": [],
+  "work": "Healthy Neighborhoods Inc." ,
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "University of Maryland, Baltimore County, UMBC",
+      "area": "MS, in Geography and Environmental Systems",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "2025",
+      "endDate": "2027",
       "gpa": null,
       "courses": []
     },
