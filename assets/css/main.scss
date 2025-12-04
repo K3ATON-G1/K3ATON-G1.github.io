@@ -12,8 +12,9 @@
     "vendor/breakpoint/breakpoint",
 
     "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    /* Hard-code the default theme variants */
+    "theme/default_light",
+    "theme/default_dark",
 
     "include/mixins",
     "vendor/susy/susy",
@@ -39,5 +40,4 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+    "vendor/font-awesome/brands";
