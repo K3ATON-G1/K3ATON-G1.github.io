@@ -5,7 +5,6 @@ title_separator          : "-"
 name                     : "Keaton C Green"
 description              : "Keaton C Green's academic portfolio"  
 url                      : "https://k3aton-g1.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "k3aton-g1/k3aton-g1.github.io"
 
 author:
@@ -323,21 +322,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
