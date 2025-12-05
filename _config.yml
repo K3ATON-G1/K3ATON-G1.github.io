@@ -1,4 +1,5 @@
 locale                   : "en-US"
+site_theme               : "default"
 title                    : "UMBC"
 title_separator          : "-"
 name                     : "Keaton C Green"
