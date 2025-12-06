@@ -11,13 +11,13 @@ main:
   - # title: <center>Landing Page</center>
     url: /
 
-      - title: <center>CV</center>
+      - title: <center>CV"</center>
     url: /cv/
 
   - title: <center>Publications</center>
     url: /publications/
 
-  - #title: <center>Talks/center>
+  - #title: <center>Talks</center>
     #url: /talks/
 
   - #title: <center>Teaching</center>
