@@ -8,7 +8,7 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import
+@import, padding: 0 0.5rem;
     "vendor/breakpoint/breakpoint",
 
     "themes",
