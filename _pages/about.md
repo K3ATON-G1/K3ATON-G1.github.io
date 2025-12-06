@@ -1,7 +1,9 @@
 ---
 layout: home
 title: "Keaton Green at UMBC"
-permalink: /
+redirect_from: 
+  - /about/
+  - /about.html
 author_profile: true
 ---
 "Keaton G. is a Shriver Peaceworker Fellow and a graduate student in Geography and Environmental Systems at UMBC, where his work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. Before graduate school, he served as a Peace Corps volunteer working as a food security specialist, focusing on access, revenue generation, and nutrition. His efforts supported community level resilience and aligned with development scholarship that links household well-being to resource systems and local capacity building."
@@ -15,3 +17,6 @@ author_profile: true
 "Alongside academic and community work, he maintains a professional digital portfolio, develops data management systems, and produces analytical tools for organizational partners. His roles include writing program documentation, conducting spatial analysis, troubleshooting technical workflows, and communicating findings to residents and institutional collaborators."
 
 "Overall, Keaton’s profile represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics."
+
+
+
