@@ -18,3 +18,9 @@ redirect_from:
 "Alongside academic and community work, he maintains a professional digital portfolio, develops data management systems, and produces analytical tools for organizational partners. His roles include writing program documentation, conducting spatial analysis, troubleshooting technical workflows, and communicating findings to residents and institutional collaborators."
 
 "Overall, Keaton’s profile represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics."
+
+/* Center the main page title */
+.page__title {
+  text-align: center;
+  width: 100%;
+}
