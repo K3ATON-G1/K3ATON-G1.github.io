@@ -1,11 +1,11 @@
 main:
   - title: "CV"
     url: /_pages/Resume.pdf
-
+    
   - title: "Publications"
     url: /publications/
-
-    - title: "Portfolio"
+    
+  - title: "Portfolio"
     url: /portfolio/
 
   - # title: "Talks"
