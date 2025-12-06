@@ -1,6 +1,6 @@
 locale                   : "en-US"
 site_theme               : "default"
-title                    : <center>KEATON GREEN at UMBC</center>
+title                    : <center>KEATON's HOMEPAGE</center>
 title_separator          : "  "
 name                     : "Keaton C Green"
 description              : "Keaton C Green's academic portfolio"  
@@ -14,7 +14,7 @@ author:
   pronouns         : "He/Him"
   bio              : "Return Peace Corps Volunteer, M.S in Geography and Environmental Systems."
   location         : "Baltimore, MD"
-  employer         : "University of Maryland, Baltimore County"
+  employer         : "UMBC"
   uri              : # URL
   email            : "keatong1@umbc.edu" 
 
