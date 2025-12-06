@@ -42,3 +42,22 @@
     "vendor/font-awesome/brands"
 ;
 
+/* Center site title in the masthead */
+.masthead__inner-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensure navigation stays balanced */
+.masthead__menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the title specifically */
+.masthead__menu-item--lg.persist {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
