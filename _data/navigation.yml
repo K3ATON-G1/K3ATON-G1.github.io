@@ -3,7 +3,7 @@ main:
     # url: /
     
   - title: "CV"
-    url: /pages/resume.pdf
+    url: /_pages/Resume.pdf
 
   - title: "Publications"
     url: /publications/
