@@ -1,33 +1,24 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
-main:
-  - # title: <center>Landing Page</center>
-    url: /
-
-      - title: <center>CV"</center>
+<center> main </center>:
+  - # title: "Landing Page"
+    # url: /
+    
+  - title: "CV"
     url: /cv/
 
-  - title: <center>Publications</center>
+  - title: "Publications"
     url: /publications/
 
-  - #title: <center>Talks</center>
-    #url: /talks/
+  - # title: "Talks"
+    # url: /talks/
 
-  - #title: <center>Teaching</center>
-    #url: /teaching/
+  - # title: "Teaching"
+    # url: /teaching/
 
-  - title: <center>Portfolio</center>
+  - title: "Portfolio"
     url: /portfolio/
 
-  - #title: <center>Blog Posts</center>
-    #url: /year-archive/
+  - # title: "Blog Posts"
+    # url: /year-archive/
 
-  - #title: <center>Guide</center>
-    #url: /markdown/
+  - # title: "Guide"
+    # url: /markdown/
