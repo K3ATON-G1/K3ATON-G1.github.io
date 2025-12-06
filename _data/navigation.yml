@@ -1,12 +1,13 @@
 main:
-  - # title: "Landing Page"
-    # url: /
-    
+
   - title: "CV"
     url: /_pages/Resume.pdf
 
   - title: "Publications"
     url: /publications/
+
+    - title: "Portfolio"
+    url: /portfolio/
 
   - # title: "Talks"
     # url: /talks/
@@ -14,8 +15,8 @@ main:
   - # title: "Teaching"
     # url: /teaching/
 
-  - title: "Portfolio"
-    url: /portfolio/
+     - # title: "Landing Page"
+    # url: /
 
   - # title: "Blog Posts"
     # url: /year-archive/
