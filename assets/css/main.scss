@@ -41,3 +41,36 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+# Path to your CSS file (change if needed)
+css_file <- "assets/css/main.css"
+
+# CSS block that fixes navigation spacing
+nav_css <- "
+/* Nav spacing overrides for masthead */
+
+.greedy-nav .visible-links {
+  display: flex;
+  align-items: center;
+}
+
+/* space between all nav items */
+.greedy-nav .visible-links > li.masthead__menu-item {
+  padding: 0 0.75rem;  /* left-right spacing between items */
+}
+
+/* extra space between site title and rest of nav */
+.greedy-nav .visible-links > li.masthead__menu-item--lg.persist {
+  margin-right: 1.5rem;
+}
+
+/* optional: keep the theme toggle slightly separated at the end */
+.greedy-nav .visible-links > li#theme-toggle {
+  margin-left: 1rem;
+}
+"
+
+# Write the CSS block to the file (append = TRUE if you don't want to overwrite)
+write(nav_css, file = css_file, append = TRUE)
+
+cat("Navigation spacing CSS added to", css_file, "\n")
+
