@@ -19,6 +19,10 @@ He is a technically skilled GIS analyst who designs and executes complex multi-s
 
 Keaton’s research focuses on cultural capital, vacancy, reinvestment patterns, boundary making, and the governance of place. He draws on authors such as Stewart, Baird, Colburn, Haraway, and Carter to analyze how inequality becomes embedded in landscapes through structural forces, symbolic meanings, and everyday spatial practices. This reflects interpretive and critical traditions in human geography, where space, culture, and power are understood as co-producing urban life.
 
+<p align="center">
+  <img src="/files/AVEC.JPG" alt="description" style="max-width: 80%; border-radius: 10px;">
+</p>
+
 Alongside academic and community work, he maintains a professional digital portfolio, develops data management systems, and produces analytical tools for organizational partners. His roles include writing program documentation, conducting spatial analysis, troubleshooting technical workflows, and communicating findings to residents and institutional collaborators.
 
 Overall, Keaton’s profile represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics.
