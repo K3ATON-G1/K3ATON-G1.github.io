@@ -78,3 +78,23 @@
 .page__content p {
   text-align: justify !important;
 }
+.author__avatar {
+  text-align: center;
+}
+.author__avatar img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* Center name, pronouns, short bio */
+.author__content {
+  text-align: center;
+}
+/* Center icons and links under the bio */
+.author__urls-wrapper {
+  text-align: center;
+}
+.author__urls li {
+  display: inline-block;
+  margin: 0 5px;
+}
