@@ -1,5 +1,10 @@
-**About Keaton C Green**
-
+permalink: /
+title: **Academic Page**
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+=====
 "Keaton G. is a Shriver Peaceworker Fellow and a graduate student in Geography and Environmental Systems at UMBC, where his work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. Before graduate school, he served as a Peace Corps volunteer working as a food security specialist, focusing on access, revenue generation, and nutrition. His efforts supported community level resilience and aligned with development scholarship that links household well-being to resource systems and local capacity building (Chambers, 1997)."
 
 "Through his placement with Healthy Neighborhoods Inc., he supports homeowner repair programs, senior stabilization initiatives, reinvestment strategies, and the everyday infrastructures that contribute to neighborhood stability. This work resonates with urban political economy frameworks that examine how community well-being emerges through policy, investment, and unequal spatial arrangements (Harvey, 2008)."
