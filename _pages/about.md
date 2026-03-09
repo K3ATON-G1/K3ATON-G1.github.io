@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Keaton G. is a Shriver Peaceworker Fellow and a graduate student in Geography and Environmental Systems at UMBC, where his work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. Before graduate school, he served as a Peace Corps volunteer working as a food security specialist, focusing on access, revenue generation, and nutrition. His efforts supported community level resilience and aligned with development scholarship that links household well-being to resource systems and local capacity building.
+Keaton C. Green is a Shriver Peaceworker Fellow and a graduate student in the Geography and Environmental Systems department at UMBC, where his work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. 
+
+Before graduate school, he served as a Peace Corps volunteer working as a food security specialist, focusing on access, revenue generation, and nutrition. His efforts supported community level resilience and aligned with development scholarship that links household well-being to resource systems and local capacity building.
 
 <p align="center">
   <img src="/files/IMG_2976.JPG" alt="description" style="max-width: 80%; border-radius: 10px;">
@@ -15,7 +17,9 @@ Keaton G. is a Shriver Peaceworker Fellow and a graduate student in Geography an
 
 Through his placement with Healthy Neighborhoods Inc., he supports homeowner repair programs, senior stabilization initiatives, reinvestment strategies, and the everyday infrastructures that contribute to neighborhood stability. This work resonates with urban political economy frameworks that examine how community well-being emerges through policy, investment, and unequal spatial arrangements.
 
-He is a technically skilled GIS analyst who designs and executes complex multi-stage workflows in ArcGIS Pro and R, often involving spatial joins, geodatabase management, tract-level modeling, and multi-scalar data integration. His current projects span Baltimore neighborhood analysis, New York City rat complaint patterns, COVID 19 ZIP-to-tract apportionment, and other comparative urban studies, reflecting contemporary geographic methods that connect urban problems to spatial data and analytic rigor.
+Keaton is a technically skilled GIS analyst who designs and executes complex multi-stage workflows in ArcGIS Pro, Q-GIS, and R, often involving spatial joins, geodatabase management, tract-level modeling, and multi-scalar data integration.
+
+His current projects span Baltimore neighborhood analysis, New York City rat complaint patterns, COVID 19 ZIP-to-tract apportionment, and other comparative urban studies, reflecting contemporary geographic methods that connect urban problems to spatial data and analytic rigor.
 
 Keaton’s research focuses on cultural capital, vacancy, reinvestment patterns, boundary making, and the governance of place. He draws on authors such as Stewart, Baird, Colburn, Haraway, and Carter to analyze how inequality becomes embedded in landscapes through structural forces, symbolic meanings, and everyday spatial practices. This reflects interpretive and critical traditions in human geography, where space, culture, and power are understood as co-producing urban life.
 
@@ -23,5 +27,5 @@ Keaton’s research focuses on cultural capital, vacancy, reinvestment patterns,
 
 Alongside academic and community work, he maintains a professional digital portfolio, develops data management systems, and produces analytical tools for organizational partners. His roles include writing program documentation, conducting spatial analysis, troubleshooting technical workflows, and communicating findings to residents and institutional collaborators.
 
-Overall, Keaton’s profile represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics.
+Overall, Keaton represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics.
 
