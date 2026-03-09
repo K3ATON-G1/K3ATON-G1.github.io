@@ -12,7 +12,7 @@ Keaton C. Green is a Shriver Peaceworker Fellow and a graduate student in the Ge
 Before graduate school, he served as a Peace Corps volunteer working as a food security specialist, focusing on access, revenue generation, and nutrition. His efforts supported community level resilience and aligned with development scholarship that links household well-being to resource systems and local capacity building.
 
 <p align="center">
-  <img src="/files/IMG_2976.JPG" alt="description" style="max-width: 80%; border-radius: 10px;">
+  <img src="/files/IMG_2976.JPG" alt="description" style="max-width: 80%; border-radius: 30px;">
 </p>
 
 Through his placement with Healthy Neighborhoods Inc., he supports homeowner repair programs, senior stabilization initiatives, reinvestment strategies, and the everyday infrastructures that contribute to neighborhood stability. This work resonates with urban political economy frameworks that examine how community well-being emerges through policy, investment, and unequal spatial arrangements.
