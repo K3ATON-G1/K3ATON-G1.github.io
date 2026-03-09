@@ -52,7 +52,7 @@
 .masthead__menu {
   width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 /* Center the title specifically */
@@ -95,6 +95,6 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.page__content {
-  margin-left: 80px;
+.page {
+  padding-left: 2rem;
 }
