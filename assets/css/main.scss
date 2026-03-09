@@ -96,13 +96,9 @@
   margin-right: auto !important;
 }
 
-.page__inner-wrap {
-  padding-left: 2rem;
-}
-
-@media (max-width: 1024px) {
-  .page__inner-wrap {
-    padding-left: 1rem;
+@include breakpoint($large) {
+  .page {
+    padding-left: 3rem;
   }
 }
 
