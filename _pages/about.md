@@ -36,6 +36,3 @@ Below is an example of Keaton's work that demonstrates his approach to GIS, hous
         title="NYC Housing and Black Population Project">
 </iframe>
 
-<h1>This is a test</h1>
-
-<p>This should be bold.</p>
