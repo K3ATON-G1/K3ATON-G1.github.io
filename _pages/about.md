@@ -29,10 +29,9 @@ Overall, Keaton represents a synthesis of community engagement, technical expert
 
 Below is an example of Keaton's work that demonstrates his approach to GIS, housing policy research, and spatial analysis.
 
-<iframe
-  src="{{ '/files/NYC_Hsg_blk-pop.pdf' | relative_url }}"
-  width="100%"
-  height="900px"
-  style="border: 1px solid #cccccc;"
-  title="NYC Housing and Black Population Project">
+<iframe src="/files/NYC_Hsg_blk-pop.pdf"
+        width="100%"
+        height="900"
+        style="border: 1px solid #cccccc;"
+        title="NYC Housing and Black Population Project">
 </iframe>
