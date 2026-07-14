@@ -97,12 +97,18 @@
 }
 
 @include breakpoint($large) {
-  .sidebar {
-    transform: translateX(-100px);
-  }
-
   .page,
   .archive {
     padding-left: 2rem;
+  }
+}
+
+/* Custom sidebar position */
+@media screen and (min-width: 1024px) {
+  body .sidebar {
+    position: relative !important;
+    left: -100px !important;
+    transform: none !important;
+    margin-left: 0 !important;
   }
 }
