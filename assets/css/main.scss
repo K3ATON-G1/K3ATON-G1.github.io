@@ -108,33 +108,28 @@
     max-height: none !important;
   }
 }
+/* ==========================================================
+   Topography backgrounds
+   ========================================================== */
 
-/* Default and light-mode background */
-:root,
-html[data-theme="light"] {
-  --topography-image:
-    url("https://K3ATON-G1.github.io/assets/Images/Topography.png");
-  --topography-color: #ffffff;
-}
-
-/* Dark-mode background */
-html[data-theme="dark"] {
-  --topography-image:
-    url("https://K3ATON-G1.github.io/assets/Images/Topography-dark.png");
-  --topography-color: #111111;
-}
-
-/* Apply the selected background */
+/* Light background */
 html,
 body {
-  background-color: var(--topography-color) !important;
-  background-image: var(--topography-image) !important;
+  background-color: #ffffff !important;
+  background-image: url("https://K3ATON-G1.github.io/assets/Images/Topography.png") !important;
   background-repeat: repeat !important;
-  background-position: center top !important;
   background-size: 700px auto !important;
   background-attachment: fixed !important;
 }
 
+/* Dark background */
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background-color: #111111 !important;
+  background-image: url("https://K3ATON-G1.github.io/assets/Images/Topography-dark.png") !important;
+}
+
+/* Remove solid layers covering the background */
 .initial-content,
 #main,
 .page,
@@ -147,5 +142,4 @@ body {
 .author__content {
   background-color: transparent !important;
   background-image: none !important;
-}one !important;
 }
