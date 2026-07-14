@@ -92,18 +92,41 @@
     overflow: visible !important;
   }
 
-  body .sidebar.sticky {
-    overflow: visible !important;
-    overflow-x: visible !important;
-    overflow-y: visible !important;
-    max-height: none !important;
-  }
+  /* Light Mode */
+body {
+  background-color: #ffffff !important;
+  background-image: url("K3ATON-G1.github.io/assets/Images/Topography.png") !important;
+  background-repeat: repeat !important;
+  background-size: 700px auto !important;
+  background-attachment: fixed !important;
 }
 
-body {
-  background-color: #ffffff;
-  background-image: url("K3ATON-G1.github.io/assets/Images/Topography.png");
-  background-repeat: repeat;
-  background-size: 700px auto;
-  background-attachment: fixed;
+/* Dark Mode */
+html[data-theme="dark"] body {
+  background-color: #111111 !important;
+  background-image: url("K3ATON-G1.github.io/assets/Images/Topography-dark.png") !important;
+}
+
+/* Remove the white page backgrounds */
+.initial-content,
+#main,
+.page,
+.archive,
+.page__inner-wrap,
+.page__content,
+.page__header,
+.sidebar,
+.author__content,
+.author__urls-wrapper,
+.masthead,
+.greedy-nav,
+.site-footer {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Give text a readable backdrop */
+.page__content,
+.page__header {
+  backdrop-filter: blur(3px);
 }
