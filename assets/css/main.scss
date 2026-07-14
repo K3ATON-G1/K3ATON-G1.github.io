@@ -91,3 +91,11 @@
     transform: translateX(-100px) !important;
     overflow: visible !important;
   }
+
+body .sidebar.sticky {
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    max-height: none !important;
+  }
+}
