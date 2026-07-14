@@ -100,19 +100,10 @@
   }
 }
 
-/* Light background */
 body {
   background-color: #ffffff;
   background-image: url("K3ATON-G1.github.io/assets/Images/Topography.png");
   background-repeat: repeat;
   background-size: 700px auto;
   background-attachment: fixed;
-}
-
-/* Dark background */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111111;
-    background-image: url("K3ATON-G1.github.io/assets/Images/Topography-dark.png");
-  }
 }
