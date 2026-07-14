@@ -99,11 +99,11 @@
 @include breakpoint($large) {
   .page,
   .archive {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
-/* Move author sidebar left without scrollbars */
+/* Move author sidebar left without changing its width */
 @media screen and (min-width: 1024px) {
   body .sidebar {
     position: relative !important;
@@ -111,13 +111,9 @@
     transform: none !important;
     margin-left: 0 !important;
 
-    width: auto !important;
     height: auto !important;
     max-height: none !important;
-
     overflow: visible !important;
-    overflow-x: visible !important;
-    overflow-y: visible !important;
   }
 
   body .sidebar.sticky {
@@ -126,5 +122,10 @@
     height: auto !important;
     max-height: none !important;
     overflow: visible !important;
+  }
+
+  body .author__avatar img {
+    max-width: 180px !important;
+    height: auto !important;
   }
 }
