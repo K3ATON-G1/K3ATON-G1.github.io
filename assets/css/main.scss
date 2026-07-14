@@ -99,3 +99,43 @@ body .sidebar.sticky {
     max-height: none !important;
   }
 }
+
+/* ==========================================================
+   Topography backgrounds
+   ========================================================== */
+
+/* Light mode */
+:root {
+  --topography-background:
+    #ffffff url("K3ATON-G1.github.io/assets/Images/Topography.png")
+    repeat fixed;
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+  --topography-background:
+    #111111 url("K3ATON-G1.github.io/assets/Images/Topography-dark.png")
+    repeat fixed;
+}
+
+/* Put the image on both the outer page and body */
+html,
+body {
+  background: var(--topography-background) !important;
+  background-size: 700px auto !important;
+}
+
+/* Remove the solid-colored page layer covering the image */
+.initial-content,
+#main,
+.page,
+.archive,
+.page__inner-wrap,
+.page__content,
+.page__header,
+.sidebar,
+.author__profile,
+.author__content {
+  background-color: transparent !important;
+  background-image: none !important;
+}
