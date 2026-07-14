@@ -100,6 +100,7 @@
   }
 }
 
+/* Default light background */
 body {
   background-color: #ffffff;
   background-image: url("K3ATON-G1.github.io/assets/Images/Topography.png");
@@ -108,12 +109,8 @@ body {
   background-attachment: fixed;
 }
 
-/* Dark mode */
-[data-theme="dark"] body,
-html[data-theme="dark"] body,
-.dark body,
-body.dark,
-body.dark-mode {
+/* Dark background only when dark mode is active */
+html[data-theme="dark"] body {
   background-color: #111111;
   background-image: url("K3ATON-G1.github.io/assets/Images/Topography-dark.png");
 }
