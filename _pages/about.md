@@ -27,3 +27,5 @@ Keaton’s research focuses on cultural capital, vacancy, reinvestment patterns,
 
 Overall, Keaton represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics.
 
+Below is an example of Keaton's work that demonstrates his approach to GIS, housing policy research, and spatial analysis.
+
