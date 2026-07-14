@@ -2,10 +2,8 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * This file controls what is imported from /_sass.
+ * The first two lines are required by Jekyll.
  */
 
 @import
@@ -42,42 +40,54 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Center the page title on content pages */
+
+/* ==========================================================
+   Page formatting
+   ========================================================== */
+
+/* Center and enlarge page titles */
 .page__title {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-   font-size: 3rem;
+  font-size: 3rem;
 }
 
-/* Center its container for consistent alignment */
+/* Center the page-title container */
 .page__header {
   text-align: center;
 }
-.page__content {
+
+/* Justify page text */
+.page__content,
+.page__content p {
   text-align: justify;
 }
-.page__content p {
-  text-align: justify !important;
-}
+
+/* Center author photograph */
 .author__avatar {
   text-align: center;
 }
+
 .author__avatar img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
 }
-/* Center name, pronouns, short bio */
+
+/* Center author name and biography */
 .author__content {
   text-align: center;
 }
+
+/* Center images inside page content */
 .page__content img {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
+/* Add space beside the main content on large screens */
 @include breakpoint($large) {
   .page,
   .archive {
@@ -85,14 +95,13 @@
   }
 }
 
-/* Move sidebar left while preserving the original page layout */
 @media screen and (min-width: 1024px) {
   body .sidebar {
     transform: translateX(-100px) !important;
     overflow: visible !important;
   }
 
-body .sidebar.sticky {
+  body .sidebar.sticky {
     overflow: visible !important;
     overflow-x: visible !important;
     overflow-y: visible !important;
@@ -100,32 +109,32 @@ body .sidebar.sticky {
   }
 }
 
-/* ==========================================================
-   Topography backgrounds
-   ========================================================== */
-
-/* Light mode */
-:root {
-  --topography-background:
-    #ffffff url("K3ATON-G1.github.io/assets/Images/Topography.png")
-    repeat fixed;
+/* Default and light-mode background */
+:root,
+html[data-theme="light"] {
+  --topography-image:
+    url("https://K3ATON-G1.github.io/assets/Images/Topography.png");
+  --topography-color: #ffffff;
 }
 
-/* Dark mode */
+/* Dark-mode background */
 html[data-theme="dark"] {
-  --topography-background:
-    #111111 url("K3ATON-G1.github.io/assets/Images/Topography-dark.png")
-    repeat fixed;
+  --topography-image:
+    url("https://K3ATON-G1.github.io/assets/Images/Topography-dark.png");
+  --topography-color: #111111;
 }
 
-/* Put the image on both the outer page and body */
+/* Apply the selected background */
 html,
 body {
-  background: var(--topography-background) !important;
+  background-color: var(--topography-color) !important;
+  background-image: var(--topography-image) !important;
+  background-repeat: repeat !important;
+  background-position: center top !important;
   background-size: 700px auto !important;
+  background-attachment: fixed !important;
 }
 
-/* Remove the solid-colored page layer covering the image */
 .initial-content,
 #main,
 .page,
@@ -138,4 +147,5 @@ body {
 .author__content {
   background-color: transparent !important;
   background-image: none !important;
+}one !important;
 }
