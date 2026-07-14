@@ -102,3 +102,29 @@
     padding-left: 1rem;
   }
 }
+
+/* Move author sidebar left without scrollbars */
+@media screen and (min-width: 1024px) {
+  body .sidebar {
+    position: relative !important;
+    left: -100px !important;
+    transform: none !important;
+    margin-left: 0 !important;
+
+    width: auto !important;
+    height: auto !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+  }
+
+  body .sidebar.sticky {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
