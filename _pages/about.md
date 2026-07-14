@@ -47,8 +47,6 @@ This project is an example of Keaton's academic and technical work.
   title="Student Green Assignment Five">
 </iframe>
 
-<p>
-  <a href="/files/student_green_assignment_five.html" target="_blank">
+  <a href="files/Basic_Statistics_With_Geography.html" target="_blank">
     Open the full project in a new tab
   </a>
-</p>
