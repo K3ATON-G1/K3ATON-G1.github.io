@@ -36,12 +36,11 @@ Below is an example of Keaton's work that demonstrates his approach to GIS, hous
         title="NYC Housing and Black Population Project">
 </iframe>
 
+
 This project is an example of Keaton's academic and technical work.
 
-</p>
-
 <iframe
-  src="/files/student_green_assignment_five.html"
+  src="/files/Basic_Statistics_With_Geography.html"
   width="100%"
   height="900"
   style="border: 1px solid #cccccc;"
