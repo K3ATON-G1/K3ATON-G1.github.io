@@ -93,40 +93,6 @@ layout: default
     {% endif %}
   </article>
 
-    {% if page.url == "/" %}
-    <aside class="homepage-link-rail" aria-label="Professional pages">
-
-      <a href="{{ '/cv/' | relative_url }}" class="homepage-link-card">
-        <span class="homepage-link-title">CV</span>
-        <span class="homepage-link-description">
-          Education, experience, and skills
-        </span>
-      </a>
-
-      <a href="{{ '/portfolio/' | relative_url }}" class="homepage-link-card">
-        <span class="homepage-link-title">Portfolio</span>
-        <span class="homepage-link-description">
-          Selected GIS and research projects
-        </span>
-      </a>
-
-      <a href="{{ '/publications/' | relative_url }}" class="homepage-link-card">
-        <span class="homepage-link-title">Publications</span>
-        <span class="homepage-link-description">
-          Research papers and written work
-        </span>
-      </a>
-
-      <a href="{{ '/talks/' | relative_url }}" class="homepage-link-card">
-        <span class="homepage-link-title">Presentations</span>
-        <span class="homepage-link-description">
-          Talks, posters, and presentations
-        </span>
-      </a>
-
-    </aside>
-  {% endif %}
-
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
