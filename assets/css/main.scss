@@ -97,6 +97,10 @@
 }
 
 @include breakpoint($large) {
+  .sidebar {
+    margin-left: -3rem;
+  }
+
   .page,
   .archive {
     padding-left: 2rem;
