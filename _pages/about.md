@@ -6,6 +6,29 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<nav class="about-button-rail" aria-label="Portfolio links">
+
+  <a href="{{ '/cv/' | relative_url }}" class="about-rail-button">
+    <span class="about-rail-title">CV</span>
+    <span class="about-rail-description">Education and experience</span>
+  </a>
+
+  <a href="{{ '/portfolio/' | relative_url }}" class="about-rail-button">
+    <span class="about-rail-title">Portfolio</span>
+    <span class="about-rail-description">Selected GIS and research work</span>
+  </a>
+
+  <a href="{{ '/publications/' | relative_url }}" class="about-rail-button">
+    <span class="about-rail-title">Publications</span>
+    <span class="about-rail-description">Papers and written research</span>
+  </a>
+
+  <a href="{{ '/talks/' | relative_url }}" class="about-rail-button">
+    <span class="about-rail-title">Presentations</span>
+    <span class="about-rail-description">Talks, posters, and slides</span>
+  </a>
+
+</nav>
 
 Keaton C. Green a current Shriver Peaceworker Fellow and a graduate student in the Geography and Environmental Systems department at UMBC, where his work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. 
 
