@@ -117,14 +117,3 @@
     max-height: none !important;
   }
 }
-
-/* Prevent navigation links from flashing before the menu initializes */
-.greedy-nav .visible-links,
-.greedy-nav .hidden-links {
-  visibility: hidden;
-}
-
-.greedy-nav.loaded .visible-links,
-.greedy-nav.loaded .hidden-links {
-  visibility: visible;
-}
