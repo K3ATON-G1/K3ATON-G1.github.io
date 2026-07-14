@@ -27,7 +27,7 @@ Keaton’s research focuses on cultural capital, vacancy, reinvestment patterns,
 
 Overall, Keaton represents a synthesis of community engagement, technical expertise, and theoretically grounded inquiry. His background in Peace Corps food security work and his current applied urban research illustrate how geographic practice connects global development perspectives with local spatial dynamics.
 
-Below is an example of Keaton's work that demonstrates his approach to GIS, housing policy research, and spatial analysis.
+Below is an example of Keaton's work that demonstrates his approach to GIS, housing policy research, and spatial analysis, 2026.
 
 <iframe src="/files/NYC_Hsg_blk-pop.pdf"
         width="100%"
@@ -35,10 +35,9 @@ Below is an example of Keaton's work that demonstrates his approach to GIS, hous
         style="border: 1px solid #cccccc;"
         title="NYC Housing and Black Population Project">
 </iframe>
-
-
-This project is an example of Keaton's academic and technical work.
-
+<br>
+This project is an example of Keaton's academic and technical work, 2026. This structure of workflow is implicated in all projects and is foundational to the workflow he utilizes. 
+<br>
 <iframe
   src="/files/Basic_Statistics_With_Geography.html"
   width="100%"
