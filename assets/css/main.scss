@@ -98,11 +98,11 @@
 
 @include breakpoint($large) {
   .sidebar {
-    margin-left: -3rem;
+    transform: translateX(-100px);
   }
 
   .page,
   .archive {
-    padding-left: 4rem;
+    padding-left: 2rem;
   }
 }
