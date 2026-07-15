@@ -144,10 +144,17 @@ html[data-theme="dark"] body {
   background-image: none !important;
 }
 
-/* Semi-transparent background behind page content */
 .page__content,
 .page__header {
-  background: rgba(235, 235, 235, 0.75);
+  background: rgba(245, 245, 245, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dark"] .page__content,
+html[data-theme="dark"] .page__header {
+  background: rgba(20, 20, 20, 0.72);
 }
