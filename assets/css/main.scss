@@ -278,6 +278,23 @@ html[data-theme="dark"] .sidebar {
   }
 }
 
+.greedy-nav .visible-links a {
+  background: transparent;
+  border: 2px solid #2e9368;
+  color: #2e9368 !important;
+  border-radius: 8px;
+  padding: 9px 18px;
+  margin: 0 6px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.greedy-nav .visible-links a:hover {
+  background: #2e9368;
+  color: white !important;
+}
+
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
