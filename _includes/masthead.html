@@ -167,19 +167,21 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       event.preventDefault();
-      animationRunning = true;
+animationRunning = true;
 
-      bear.classList.remove("is-running");
+bear.classList.remove("is-running");
 
-      /* Restart the animation */
-      void bear.offsetWidth;
+/* Restart the animation */
+void bear.offsetWidth;
 
-      bear.classList.add("is-running");
+bear.classList.add("is-running");
 
-      window.setTimeout(function () {
-        window.location.href = destination;
-      }, 5000);
-    });
-  });
-});
-</script>
+bear.addEventListener(
+  "animationend",
+  function handleBearFinish(event) {
+    if (event.animationName === "bear-run-across") {
+      window.location.href = destination;
+    }
+  },
+  { once: true }
+);
