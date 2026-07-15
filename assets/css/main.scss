@@ -233,25 +233,6 @@ html[data-theme="dark"] .sidebar {
   padding-right: clamp(6px, 0.7vw, 14px) !important;
 }
 
-/* Keep desktop navigation expanded */
-@media screen and (min-width: 1100px) {
-  .greedy-nav > button {
-    display: none !important;
-  }
-
-  .greedy-nav .hidden-links {
-    display: none !important;
-  }
-
-  .greedy-nav .visible-links {
-    overflow: visible !important;
-  }
-
-  .greedy-nav .visible-links > li {
-    display: block !important;
-  }
-}
-
 /* Reduce spacing on narrower screens */
 @media screen and (max-width: 1400px) {
   .masthead__inner-wrap {
