@@ -146,15 +146,21 @@ html[data-theme="dark"] body {
 
 .page__content,
 .page__header {
-  background: rgba(245, 245, 245, 0.72);
+  background-color: rgba(255, 255, 255, 0.75) !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border-radius: 12px;
+
   padding: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
 }
 
 html[data-theme="dark"] .page__content,
-html[data-theme="dark"] .page__header {
-  background: rgba(20, 20, 20, 0.72);
+html[data-theme="dark"] .page__header,
+body.dark .page__content,
+body.dark .page__header,
+html.dark .page__content,
+html.dark .page__header,
+body.dark-mode .page__content,
+body.dark-mode .page__header {
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
