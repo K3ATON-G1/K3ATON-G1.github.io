@@ -56,7 +56,9 @@
 
 /* Center the page-title container */
 .page__header {
-  text-align: center;
+  text-align: left !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* Justify page text */
