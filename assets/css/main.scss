@@ -40,7 +40,6 @@
     "vendor/font-awesome/brands"
 ;
 
-
 /* ==========================================================
    Page formatting
    ========================================================== */
@@ -99,6 +98,7 @@
   body .sidebar {
     transform: translateX(-100px) !important;
     overflow: visible !important;
+    margin-top: -50px !important;
   }
 
   body .sidebar.sticky {
