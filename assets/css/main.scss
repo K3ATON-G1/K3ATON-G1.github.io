@@ -47,11 +47,9 @@
 
 /* Center and enlarge page titles */
 .page__title {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
+  text-align: left !important;
+  margin: 0 0 1.5rem 0 !important;
+  font-size: 5rem;
 }
 
 /* Center the page-title container */
