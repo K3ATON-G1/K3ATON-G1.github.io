@@ -64,6 +64,7 @@
 <script>
 (function () {
   const desktopWidth = 1100;
+  let resizeTimer;
 
   function updateNavigation() {
     const visibleLinks = document.querySelector(".greedy-nav .visible-links");
@@ -76,21 +77,33 @@
     }
 
     if (window.innerWidth >= desktopWidth) {
-      while (hiddenLinks.firstChild) {
-        visibleLinks.insertBefore(hiddenLinks.firstChild, themeToggle);
+      while (hiddenLinks.firstElementChild) {
+        if (themeToggle) {
+          visibleLinks.insertBefore(hiddenLinks.firstElementChild, themeToggle);
+        } else {
+          visibleLinks.appendChild(hiddenLinks.firstElementChild);
+        }
       }
 
       hiddenLinks.classList.add("hidden");
       hiddenLinks.style.display = "none";
+
+      menuButton.classList.add("hidden");
       menuButton.style.display = "none";
     } else {
       hiddenLinks.style.display = "";
       menuButton.style.display = "";
+      menuButton.classList.remove("hidden");
     }
+  }
+
+  function scheduleUpdate() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateNavigation, 100);
   }
 
   document.addEventListener("DOMContentLoaded", updateNavigation);
   window.addEventListener("load", updateNavigation);
-  window.addEventListener("resize", updateNavigation);
+  window.addEventListener("resize", scheduleUpdate);
 })();
 </script>
