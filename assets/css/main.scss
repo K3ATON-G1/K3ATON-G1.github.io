@@ -112,7 +112,7 @@
 }
 
 .sidebar {
-  margin-top: -50px !important;
+  margin-top: -40px !important;
 }
 
 .greedy-nav {
@@ -122,11 +122,6 @@
 .greedy-nav a {
   font-size: 1.2rem;
   padding: 0 18px;
-}
-
-.site-title {
-  font-size: 1.8rem;
-  font-weight: 700;
 }
 
 .page__content {
@@ -182,6 +177,50 @@ html[data-theme="dark"] .sidebar {
   letter-spacing: 0.09em !important;
   line-height: 1.1 !important;
   margin-top: 5px !important;
+}
+
+/* ==========================================================
+   Masthead spacing and alignment
+   ========================================================== */
+
+.masthead__inner-wrap {
+  max-width: none !important;
+  padding-left: 130px !important;
+  padding-right: 130px !important;
+}
+
+.greedy-nav {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.greedy-nav .visible-links {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.masthead__menu-item--lg {
+  margin-right: auto !important;
+}
+
+#theme-toggle {
+  margin-left: 18px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .masthead__inner-wrap {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masthead__inner-wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }
 
 /* ==========================================================
