@@ -129,6 +129,30 @@
   font-weight: 700;
 }
 
+.page__content {
+  max-width: 850px;
+}
+
+.page__title {
+  margin-bottom: 1.5rem;
+}
+
+.page__content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+html[data-theme="dark"] .sidebar {
+  background: rgba(0, 0, 0, 0.35);
+}
+
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
