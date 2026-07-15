@@ -13,7 +13,7 @@
 
           <!-- Custom two-line site title -->
           <li class="masthead__menu-item masthead__menu-item--lg persist">
-            <a href="{{ base_path }}/" class="site-title">
+            <a href="{{ '/' | relative_url }}" class="site-title">
               <span class="site-name">Keaton C Green</span>
               <span class="site-tagline">Critical Geography</span>
             </a>
@@ -21,16 +21,16 @@
 
           <!-- Main navigation links -->
           {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-
             <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}">
-                {{ link.title }}
-              </a>
+              {% if link.url contains 'http' %}
+                <a href="{{ link.url }}">
+                  {{ link.title }}
+                </a>
+              {% else %}
+                <a href="{{ link.url | relative_url }}">
+                  {{ link.title }}
+                </a>
+              {% endif %}
             </li>
           {% endfor %}
 
@@ -58,7 +58,7 @@
 <!-- Bear animation element -->
 <div id="cartwheel-bear" aria-hidden="true">
   <img
-    src="{{ base_path }}/assets/Images/cartwheel-bear.gif"
+    src="{{ '/assets/Images/cartwheel-bear.gif' | relative_url }}"
     alt="">
 </div>
 
@@ -171,14 +171,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       bear.classList.remove("is-running");
 
-      /* Restart the animation */
       void bear.offsetWidth;
 
       bear.classList.add("is-running");
 
       window.setTimeout(function () {
-        window.location.href = destination;
-      }, 4950);
+        window.location.assign(destination);
+      }, 4550);
     });
   });
 });
