@@ -62,26 +62,35 @@
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth >= 1100) {
+(function () {
+  const desktopWidth = 1100;
+
+  function updateNavigation() {
     const visibleLinks = document.querySelector(".greedy-nav .visible-links");
     const hiddenLinks = document.querySelector(".greedy-nav .hidden-links");
     const menuButton = document.querySelector(".greedy-nav > button");
+    const themeToggle = document.querySelector("#theme-toggle");
 
-    if (visibleLinks && hiddenLinks) {
+    if (!visibleLinks || !hiddenLinks || !menuButton) {
+      return;
+    }
+
+    if (window.innerWidth >= desktopWidth) {
       while (hiddenLinks.firstChild) {
-        visibleLinks.insertBefore(
-          hiddenLinks.firstChild,
-          visibleLinks.querySelector("#theme-toggle")
-        );
+        visibleLinks.insertBefore(hiddenLinks.firstChild, themeToggle);
       }
 
+      hiddenLinks.classList.add("hidden");
       hiddenLinks.style.display = "none";
-    }
-
-    if (menuButton) {
       menuButton.style.display = "none";
+    } else {
+      hiddenLinks.style.display = "";
+      menuButton.style.display = "";
     }
   }
-});
+
+  document.addEventListener("DOMContentLoaded", updateNavigation);
+  window.addEventListener("load", updateNavigation);
+  window.addEventListener("resize", updateNavigation);
+})();
 </script>
