@@ -60,3 +60,28 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 1100) {
+    const visibleLinks = document.querySelector(".greedy-nav .visible-links");
+    const hiddenLinks = document.querySelector(".greedy-nav .hidden-links");
+    const menuButton = document.querySelector(".greedy-nav > button");
+
+    if (visibleLinks && hiddenLinks) {
+      while (hiddenLinks.firstChild) {
+        visibleLinks.insertBefore(
+          hiddenLinks.firstChild,
+          visibleLinks.querySelector("#theme-toggle")
+        );
+      }
+
+      hiddenLinks.style.display = "none";
+    }
+
+    if (menuButton) {
+      menuButton.style.display = "none";
+    }
+  }
+});
+</script>
