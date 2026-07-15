@@ -257,44 +257,19 @@ html[data-theme="dark"] .sidebar {
   }
 }
 
-/* Keep desktop navigation links visible */
-@media screen and (min-width: 1100px) {
-  .greedy-nav .visible-links {
-    display: flex !important;
-    overflow: visible !important;
-  }
-
-  .greedy-nav .visible-links > li {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  .greedy-nav .hidden-links {
-    display: none !important;
-  }
-
-  .greedy-nav > button {
-    display: none !important;
-  }
-}
-
-.greedy-nav .visible-links a {
-  background: transparent;
-  border: 2px solid #2e9368;
-  color: #2e9368 !important;
-  border-radius: 8px;
-  padding: 9px 18px;
-  margin: 0 6px;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: all 0.25s ease;
-}
-
-.greedy-nav .visible-links a:hover {
+/* Navigation buttons ONLY (not the site title) */
+.greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a {
   background: #2e9368;
-  color: white !important;
+  border-radius: 999px;
+  padding: 8px 18px;
+  margin: 0 6px;
+  transition: all .2s ease;
 }
 
+/* Hover */
+.greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a:hover {
+  background: #247553;
+}
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
