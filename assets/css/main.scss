@@ -165,30 +165,21 @@ html[data-theme="dark"] .sidebar {
   padding-bottom: 0.6rem !important;
 }
 
-/* First line */
-.masthead__menu-item--lg .site-name {
-  display: block !important;
-  width: 100% !important;
-  font-size: 1.9rem !important;
-  font-weight: 700 !important;
-  color: #2e8b57 !important;
-  white-space: nowrap !important;
+.site-title {
+  display: inline-flex;
+  flex-direction: column;
 }
 
-/* Second line */
-.masthead__menu-item--lg .site-tagline {
-  display: block !important;
-  width: 100% !important;
-  margin-top: 4px !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  white-space: nowrap !important;
+.site-name,
+.site-tagline {
+  display: block;
+  width: fit-content;
 }
 
-/* Give the title enough width */
-.masthead__menu-item--lg {
-  flex: 1 1 auto !important;
-  min-width: 540px !important;
+.site-tagline {
+  text-align: justify;
+  text-align-last: justify;
+  width: 100%;
 }
 
 /* ==========================================================
