@@ -10,9 +10,9 @@ repository               : "k3aton-g1/k3aton-g1.github.io"
 
 author:
   avatar           : "Profile_.JPG"
-  name             : "Keaton C Green"
-  pronouns         : "He/Him"
-  bio              : "M.S in Geography and Environmental Systems."
+  #name             : "Keaton C Green"
+  #pronouns         : "He/Him"
+  #bio              : "M.S in Geography and Environmental Systems."
   location         : "Baltimore, MD"
   employer         : "Healthy Neighborhoods Inc."
   uri              : # URL
