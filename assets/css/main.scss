@@ -185,45 +185,56 @@ html[data-theme="dark"] .sidebar {
 
 .masthead__inner-wrap {
   max-width: none !important;
-  padding-left: 130px !important;
-  padding-right: 130px !important;
+  width: 100% !important;
+  padding-left: 1in !important;
+  padding-right: 1in !important;
+  box-sizing: border-box !important;
 }
 
 .greedy-nav {
+  display: flex !important;
+  align-items: center !important;
   width: 100% !important;
   min-height: 90px !important;
-  display: flex !important;
-  align-items: center !important;
 }
 
+/* Main navigation row */
 .greedy-nav .visible-links {
-  width: 100% !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-end !important;
+  width: 100% !important;
   flex-wrap: nowrap !important;
 }
 
-/* Keep title on the left */
+/* Keep title at its natural width */
 .masthead__menu-item--lg {
-  margin-right: auto !important;
   flex: 0 0 auto !important;
-  min-width: 0 !important;
+  margin-right: 1in !important;
 }
 
-/* Keep navigation items visible */
+/* Let the remaining links automatically share the space */
 .greedy-nav .visible-links > li:not(.masthead__menu-item--lg) {
-  flex: 0 0 auto !important;
+  flex: 1 1 auto !important;
+  text-align: center !important;
+  white-space: nowrap !important;
 }
 
-/* Keep theme toggle visible */
+/* Keep the theme toggle visible */
 #theme-toggle {
-  display: list-item !important;
-  margin-left: 18px !important;
+  display: block !important;
+  flex: 0 0 auto !important;
+  margin-left: 0.25in !important;
 }
 
-/* Hide the collapsed-menu button on wide screens */
-@media screen and (min-width: 1200px) {
+/* Slightly reduce link size so everything fits */
+.greedy-nav a {
+  font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
+  padding-left: clamp(6px, 0.7vw, 14px) !important;
+  padding-right: clamp(6px, 0.7vw, 14px) !important;
+}
+
+/* Keep desktop navigation expanded */
+@media screen and (min-width: 1100px) {
   .greedy-nav > button {
     display: none !important;
   }
@@ -231,28 +242,39 @@ html[data-theme="dark"] .sidebar {
   .greedy-nav .hidden-links {
     display: none !important;
   }
-}
 
-/* Reduce side padding on smaller screens */
-@media screen and (max-width: 1500px) {
-  .masthead__inner-wrap {
-    padding-left: 70px !important;
-    padding-right: 70px !important;
+  .greedy-nav .visible-links {
+    overflow: visible !important;
   }
 
-  .greedy-nav a {
-  font-size: 1.1rem;
-  padding: 0 14px;
-}
-}
-
-@media screen and (max-width: 1200px) {
-  .masthead__inner-wrap {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+  .greedy-nav .visible-links > li {
+    display: block !important;
   }
 }
 
+/* Reduce spacing on narrower screens */
+@media screen and (max-width: 1400px) {
+  .masthead__inner-wrap {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .masthead__menu-item--lg {
+    margin-right: 35px !important;
+  }
+}
+
+/* Allow normal mobile collapse */
+@media screen and (max-width: 1099px) {
+  .masthead__inner-wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .masthead__menu-item--lg {
+    margin-right: auto !important;
+  }
+}
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
