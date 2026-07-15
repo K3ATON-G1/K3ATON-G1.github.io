@@ -361,12 +361,12 @@ body.dark-mode .page__header {
 #cartwheel-bear.is-running {
   opacity: 1;
   visibility: visible;
-  animation: bear-run-across 3s linear forwards;
+  animation: bear-run-across 5s linear forwards;
 }
 
 /* Slight bounce while moving */
 #cartwheel-bear.is-running img {
-  animation: bear-run-across 3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation: bear-run-across 5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 /* Move completely across the screen */
