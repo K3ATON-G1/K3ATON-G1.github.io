@@ -330,3 +330,65 @@ body.dark-mode .page__content,
 body.dark-mode .page__header {
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
+
+/* ==========================================================
+   Cartwheel Bear
+   ========================================================== */
+
+#cartwheel-bear {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+
+  width: 140px;
+  z-index: 99999;
+
+  pointer-events: none;
+
+  visibility: hidden;
+  opacity: 0;
+
+  /* Start completely off-screen */
+  transform: translateX(-200px);
+}
+
+#cartwheel-bear img {
+  width: 100%;
+  display: block;
+}
+
+/* Start animation */
+#cartwheel-bear.is-running {
+  visibility: visible;
+  opacity: 1;
+  animation: bear-run-across 2.8s linear forwards;
+}
+
+/* Slight bounce while moving */
+#cartwheel-bear.is-running img {
+  animation: bear-bounce .25s ease-in-out infinite alternate;
+}
+
+/* Move completely across the screen */
+@keyframes bear-run-across {
+
+  0% {
+    transform: translateX(-220px);
+  }
+
+  100% {
+    transform: translateX(calc(100vw + 220px));
+  }
+}
+
+/* Small up/down movement */
+@keyframes bear-bounce {
+
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-12px);
+  }
+}
