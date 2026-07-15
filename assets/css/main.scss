@@ -275,6 +275,28 @@ html[data-theme="dark"] .sidebar {
     margin-right: auto !important;
   }
 }
+
+/* Keep desktop navigation links visible */
+@media screen and (min-width: 1100px) {
+  .greedy-nav .visible-links {
+    display: flex !important;
+    overflow: visible !important;
+  }
+
+  .greedy-nav .visible-links > li {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: none !important;
+  }
+
+  .greedy-nav > button {
+    display: none !important;
+  }
+}
+
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
