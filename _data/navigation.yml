@@ -1,12 +1,12 @@
 main:
-  - title: "About"
+  - title: "ABOUT"
     url: /
 
   - title: "CV"
     url: /assets/pdf/Resume.pdf
 
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Projects"
+ - title: "PROJECTS"
     url: /projects/
+    
+  - title: "PUBLICATIONS"
+    url: /publications/
