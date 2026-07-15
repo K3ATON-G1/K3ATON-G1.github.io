@@ -3,7 +3,7 @@ main:
     url: /
 
   - title: "CV"
-    url: /Resume.pdf
+    url: /_pages/Resume.pdf/
 
   - title: "Portfolio"
     url: /portfolio/
