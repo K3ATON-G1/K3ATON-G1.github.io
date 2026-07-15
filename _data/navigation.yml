@@ -4,8 +4,8 @@ main:
 
   - title: "CV"
     url: /assets/pdf/Resume.pdf
-
- - title: "PROJECTS"
+  
+  - title: "PROJECTS"
     url: /projects/
     
   - title: "PUBLICATIONS"
