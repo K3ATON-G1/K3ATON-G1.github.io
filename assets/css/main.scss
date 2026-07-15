@@ -40,6 +40,7 @@
     "vendor/font-awesome/brands"
 ;
 
+
 /* ==========================================================
    Page formatting
    ========================================================== */
@@ -49,6 +50,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.5rem;
   font-size: 3rem;
 }
 
@@ -61,6 +63,11 @@
 .page__content,
 .page__content p {
   text-align: justify;
+}
+
+.page__content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
 }
 
 /* Center author photograph */
@@ -94,12 +101,41 @@
   }
 }
 
-/* Move sidebar left and add spacing */
+
+/* ==========================================================
+   Extend the content only toward the right
+   ========================================================== */
+
+/*
+ * The left edge stays in its current position.
+ * The content gains 300px of additional width on large screens.
+ */
+@media screen and (min-width: 1200px) {
+  .page__content {
+    width: calc(100% + 300px) !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Prevent horizontal overflow on narrower screens */
+@media screen and (max-width: 1199px) {
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/* ==========================================================
+   Sidebar
+   ========================================================== */
+
 @media screen and (min-width: 1024px) {
   body .sidebar {
     transform: translateX(-100px) !important;
     overflow: visible !important;
-    margin-top: 15px !important;
+    margin-top: -40px !important;
     margin-bottom: 20px !important;
   }
 
@@ -112,34 +148,9 @@
 }
 
 .sidebar {
-  margin-top: -40px !important;
-}
-
-.greedy-nav {
-  min-height: 70px;
-}
-
-.greedy-nav a {
-  font-size: 1.2rem;
-  padding: 0 18px;
-}
-
-.page__content {
-  max-width: 850px;
-}
-
-.page__title {
-  margin-bottom: 1.5rem;
-}
-
-.page__content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
-}
-
-.sidebar {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
   padding: 1rem;
 }
@@ -148,7 +159,11 @@ html[data-theme="dark"] .sidebar {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* Two-line masthead title */
+
+/* ==========================================================
+   Two-line masthead title
+   ========================================================== */
+
 .masthead__menu-item--lg > a.site-title {
   display: inline-flex !important;
   flex-direction: column !important;
@@ -159,7 +174,7 @@ html[data-theme="dark"] .sidebar {
   white-space: nowrap !important;
 }
 
-/* Top line: your name */
+/* Top line: name */
 .masthead__menu-item--lg .site-name {
   display: block !important;
   color: #2e9368 !important;
@@ -178,6 +193,7 @@ html[data-theme="dark"] .sidebar {
   line-height: 1.1 !important;
   margin-top: 5px !important;
 }
+
 
 /* ==========================================================
    Masthead layout
@@ -212,7 +228,7 @@ html[data-theme="dark"] .sidebar {
   margin-right: 1in !important;
 }
 
-/* Let the remaining links automatically share the space */
+/* Let the navigation links share the remaining space */
 .greedy-nav .visible-links > li:not(.masthead__menu-item--lg) {
   flex: 1 1 auto !important;
   text-align: center !important;
@@ -226,14 +242,14 @@ html[data-theme="dark"] .sidebar {
   margin-left: 0.25in !important;
 }
 
-/* Slightly reduce link size so everything fits */
+/* Automatically scale navigation text and spacing */
 .greedy-nav a {
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
   padding-left: clamp(6px, 0.7vw, 14px) !important;
   padding-right: clamp(6px, 0.7vw, 14px) !important;
 }
 
-/* Reduce spacing on narrower screens */
+/* Reduce masthead spacing on narrower screens */
 @media screen and (max-width: 1400px) {
   .masthead__inner-wrap {
     padding-left: 40px !important;
@@ -257,22 +273,32 @@ html[data-theme="dark"] .sidebar {
   }
 }
 
-/* Navigation pills only */
-.greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a {
+
+/* ==========================================================
+   Navigation pills
+   ========================================================== */
+
+.greedy-nav
+.visible-links
+> li:not(.masthead__menu-item--lg):not(#theme-toggle)
+> a {
   background: #2e9368;
   color: #ffffff !important;
   border-radius: 999px;
   padding: 8px 18px;
   margin: 0 6px;
   text-decoration: none !important;
-  transition: all 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
-/* Hover */
-.greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a:hover {
+.greedy-nav
+.visible-links
+> li:not(.masthead__menu-item--lg):not(#theme-toggle)
+> a:hover {
   background: #247553;
   color: #ffffff !important;
 }
+
 
 /* ==========================================================
    Topography backgrounds
@@ -282,7 +308,9 @@ html[data-theme="dark"] .sidebar {
 html,
 body {
   background-color: #ffffff !important;
-  background-image: url("https://K3ATON-G1.github.io/assets/Images/Topography.png") !important;
+  background-image:
+    url("https://K3ATON-G1.github.io/assets/Images/Topography.png")
+    !important;
   background-repeat: repeat !important;
   background-size: 700px auto !important;
   background-attachment: fixed !important;
@@ -292,7 +320,9 @@ body {
 html[data-theme="dark"],
 html[data-theme="dark"] body {
   background-color: #111111 !important;
-  background-image: url("https://K3ATON-G1.github.io/assets/Images/Topography-dark.png") !important;
+  background-image:
+    url("https://K3ATON-G1.github.io/assets/Images/Topography-dark.png")
+    !important;
 }
 
 /* Remove solid layers covering the background */
@@ -310,12 +340,16 @@ html[data-theme="dark"] body {
   background-image: none !important;
 }
 
+
+/* ==========================================================
+   Transparent content panels
+   ========================================================== */
+
 .page__content,
 .page__header {
   background-color: rgba(255, 255, 255, 0.75) !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-
   padding: 2rem;
   border-radius: 12px;
 }
@@ -331,59 +365,45 @@ body.dark-mode .page__header {
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
+
 /* ==========================================================
    Cartwheel Bear
    ========================================================== */
 
 #cartwheel-bear {
   position: fixed;
-  bottom: 20px;
   left: 0;
-
+  bottom: 20px;
   width: 140px;
   z-index: 99999;
-
   pointer-events: none;
-
   visibility: hidden;
   opacity: 0;
 
-  /* Start completely off-screen */
-  transform: translateX(-200px);
+  /* Start completely outside the left edge */
+  transform: translateX(-250px);
 }
 
 #cartwheel-bear img {
-  width: 100%;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Start animation */
+/* Start the five-second crossing animation */
 #cartwheel-bear.is-running {
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
   animation: bear-run-across 5s linear forwards;
 }
 
-/* Slight bounce while moving */
+/* Add a small bounce while the GIF plays */
 #cartwheel-bear.is-running img {
-  animation: bear-run-across 5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation: bear-bounce 0.3s ease-in-out infinite alternate;
 }
 
-/* Move completely across the screen */
+/* Move completely across and beyond the screen */
 @keyframes bear-run-across {
-
-  0% {
-    transform: translateX(-220px);
-  }
-
-  100% {
-    transform: translateX(calc(100vw + 220px));
-  }
-}
-
-/* Small up/down movement */
-@keyframes bear-run-across {
-
   from {
     transform: translateX(-250px);
   }
@@ -391,5 +411,23 @@ body.dark-mode .page__header {
   to {
     transform: translateX(calc(100vw + 250px));
   }
+}
 
+/* Small vertical motion */
+@keyframes bear-bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Smaller bear on mobile devices */
+@media screen and (max-width: 700px) {
+  #cartwheel-bear {
+    width: 100px;
+    bottom: 10px;
+  }
 }
