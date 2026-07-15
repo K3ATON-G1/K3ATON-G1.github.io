@@ -94,19 +94,20 @@
   }
 }
 
+/* Move sidebar left and add spacing */
 @media screen and (min-width: 1024px) {
   body .sidebar {
     transform: translateX(-100px) !important;
     overflow: visible !important;
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
   }
 
   body .sidebar.sticky {
-    top: 15px !important;
     overflow: visible !important;
     overflow-x: visible !important;
     overflow-y: visible !important;
     max-height: none !important;
-    padding-bottom: 20px !important;
   }
 }
 
