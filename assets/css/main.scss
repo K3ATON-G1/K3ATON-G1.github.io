@@ -153,33 +153,35 @@ html[data-theme="dark"] .sidebar {
   background: rgba(0, 0, 0, 0.35);
 }
 
-/* Force the masthead title onto two lines */
+/* Two-line masthead title */
 .masthead__menu-item--lg > a.site-title {
-  display: flex !important;
+  display: inline-flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
   justify-content: center !important;
-  white-space: normal !important;
-  line-height: 1.05 !important;
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
 }
 
-.site-title {
-  display: inline-flex;
-  flex-direction: column;
+/* Top line: your name */
+.masthead__menu-item--lg .site-name {
+  display: block !important;
+  color: #2e9368 !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
 }
 
-.site-name,
-.site-tagline {
-  display: block;
-  width: fit-content;
-}
-
-.site-tagline {
-  text-align: justify;
-  text-align-last: justify;
-  width: 100%;
+/* Bottom line: Critical Geography */
+.masthead__menu-item--lg .site-tagline {
+  display: block !important;
+  color: inherit !important;
+  font-size: 1.08rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.075em !important;
+  line-height: 1.1 !important;
+  margin-top: 5px !important;
 }
 
 /* ==========================================================
