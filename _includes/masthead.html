@@ -15,15 +15,12 @@
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/" class="site-title">
               <span class="site-name">Keaton C Green</span>
-              <span class="site-tagline">
-                Critical Geography
-              </span>
+              <span class="site-tagline">Critical Geography</span>
             </a>
           </li>
 
           <!-- Main navigation links -->
           {% for link in site.data.navigation.main %}
-
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -35,21 +32,18 @@
                 {{ link.title }}
               </a>
             </li>
-
           {% endfor %}
 
           <!-- Theme toggle -->
-          <li id="theme-toggle"
-              class="masthead__menu-item persist tail">
-
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon">
-              <i id="theme-icon"
-                 class="fa-solid fa-sun"
-                 aria-hidden="true"
-                 title="Toggle theme">
+              <i
+                id="theme-icon"
+                class="fa-solid fa-sun"
+                aria-hidden="true"
+                title="Toggle theme">
               </i>
             </a>
-
           </li>
 
         </ul>
@@ -61,16 +55,34 @@
   </div>
 </div>
 
+<!-- Bear animation element -->
+<div id="cartwheel-bear" aria-hidden="true">
+  <img
+    src="{{ base_path }}/assets/Images/cartwheel-bear.gif"
+    alt="">
+</div>
+
 <script>
 (function () {
   const desktopWidth = 1100;
   let resizeTimer;
 
   function updateNavigation() {
-    const visibleLinks = document.querySelector(".greedy-nav .visible-links");
-    const hiddenLinks = document.querySelector(".greedy-nav .hidden-links");
-    const menuButton = document.querySelector(".greedy-nav > button");
-    const themeToggle = document.querySelector("#theme-toggle");
+    const visibleLinks = document.querySelector(
+      ".greedy-nav .visible-links"
+    );
+
+    const hiddenLinks = document.querySelector(
+      ".greedy-nav .hidden-links"
+    );
+
+    const menuButton = document.querySelector(
+      ".greedy-nav > button"
+    );
+
+    const themeToggle = document.querySelector(
+      "#theme-toggle"
+    );
 
     if (!visibleLinks || !hiddenLinks || !menuButton) {
       return;
@@ -79,9 +91,14 @@
     if (window.innerWidth >= desktopWidth) {
       while (hiddenLinks.firstElementChild) {
         if (themeToggle) {
-          visibleLinks.insertBefore(hiddenLinks.firstElementChild, themeToggle);
+          visibleLinks.insertBefore(
+            hiddenLinks.firstElementChild,
+            themeToggle
+          );
         } else {
-          visibleLinks.appendChild(hiddenLinks.firstElementChild);
+          visibleLinks.appendChild(
+            hiddenLinks.firstElementChild
+          );
         }
       }
 
@@ -102,15 +119,67 @@
     resizeTimer = setTimeout(updateNavigation, 100);
   }
 
-  document.addEventListener("DOMContentLoaded", updateNavigation);
-  window.addEventListener("load", updateNavigation);
-  window.addEventListener("resize", scheduleUpdate);
+  document.addEventListener(
+    "DOMContentLoaded",
+    updateNavigation
+  );
+
+  window.addEventListener(
+    "load",
+    updateNavigation
+  );
+
+  window.addEventListener(
+    "resize",
+    scheduleUpdate
+  );
 })();
 </script>
 
-<div id="cartwheel-bear" aria-hidden="true">
-  <img
-    src="{{ base_path }}/assets/Images/cartwheel-bear.gif"
-    alt=""
-  >
-</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const bear = document.getElementById("cartwheel-bear");
+
+  const pillLinks = document.querySelectorAll(
+    ".greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a"
+  );
+
+  if (!bear || pillLinks.length === 0) {
+    return;
+  }
+
+  let animationRunning = false;
+
+  pillLinks.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      const destination = link.href;
+
+      if (
+        animationRunning ||
+        !destination ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey ||
+        link.target === "_blank"
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      animationRunning = true;
+
+      bear.classList.remove("is-running");
+
+      /* Restart the animation */
+      void bear.offsetWidth;
+
+      bear.classList.add("is-running");
+
+      window.setTimeout(function () {
+        window.location.href = destination;
+      }, 2800);
+    });
+  });
+});
+</script>
