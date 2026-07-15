@@ -1,6 +1,6 @@
 locale                   : "en-US"
 site_theme               : "default"
-title                    : <span class="site-name">Keaton C Green</span><br><span class="site-tagline">GIS, Data Science & Community Development</span>
+title                    : "Keaton C Green<br>GIS, Data Science & Community Development"
 title_separator          : "  "
 name                     : "Keaton C Green"
 description              : "Keaton C Green's academic portfolio"  
