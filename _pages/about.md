@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Keaton C. Green, a current Shriver Peaceworker Fellow and a graduate student in the Department of Geography and Environmental Systems at UMBC, focusing on critical urban geography. My work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. 
+I am Keaton C. Green, a current Shriver Peaceworker Fellow and a M.S graduate student in the Department of Geography and Environmental Systems at UMBC, focusing on critical urban geography. My work integrates community practice, advanced spatial analysis, and critical approaches to urban environments. 
 
 Before graduate school, I served as a Peace Corps volunteer in Benin, West Africa, working as a food security specialist focused on access, revenue generation, and nutrition. My efforts supported community-level resilience and aligned development that links household well-being to resource systems and local capacity building.
 
