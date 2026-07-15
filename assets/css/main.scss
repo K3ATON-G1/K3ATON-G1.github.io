@@ -257,19 +257,23 @@ html[data-theme="dark"] .sidebar {
   }
 }
 
-/* Navigation buttons ONLY (not the site title) */
+/* Navigation pills only */
 .greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a {
   background: #2e9368;
+  color: #ffffff !important;
   border-radius: 999px;
   padding: 8px 18px;
   margin: 0 6px;
-  transition: all .2s ease;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
 }
 
 /* Hover */
 .greedy-nav .visible-links > li:not(.masthead__menu-item--lg):not(#theme-toggle) > a:hover {
   background: #247553;
+  color: #ffffff !important;
 }
+
 /* ==========================================================
    Topography backgrounds
    ========================================================== */
