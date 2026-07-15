@@ -384,23 +384,11 @@ body.dark-mode .page__header {
 /* Small up/down movement */
 @keyframes bear-run-across {
 
-  /* Fast start */
-  0% {
+  from {
     transform: translateX(-250px);
   }
 
-  /* Reach 40% of the screen quickly */
-  25% {
-    transform: translateX(calc(40vw - 70px));
-  }
-
-  /* Slow through the middle */
-  75% {
-    transform: translateX(calc(60vw - 70px));
-  }
-
-  /* Fast finish completely off-screen */
-  100% {
+  to {
     transform: translateX(calc(100vw + 250px));
   }
 
