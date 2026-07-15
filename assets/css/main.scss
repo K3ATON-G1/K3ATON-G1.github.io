@@ -180,7 +180,7 @@ html[data-theme="dark"] .sidebar {
 }
 
 /* ==========================================================
-   Masthead spacing and alignment
+   Masthead layout
    ========================================================== */
 
 .masthead__inner-wrap {
@@ -191,6 +191,7 @@ html[data-theme="dark"] .sidebar {
 
 .greedy-nav {
   width: 100% !important;
+  min-height: 90px !important;
   display: flex !important;
   align-items: center !important;
 }
@@ -199,27 +200,56 @@ html[data-theme="dark"] .sidebar {
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
 }
 
+/* Keep title on the left */
 .masthead__menu-item--lg {
   margin-right: auto !important;
+  flex: 0 0 auto !important;
+  min-width: 0 !important;
 }
 
+/* Keep navigation items visible */
+.greedy-nav .visible-links > li:not(.masthead__menu-item--lg) {
+  flex: 0 0 auto !important;
+}
+
+/* Keep theme toggle visible */
 #theme-toggle {
+  display: list-item !important;
   margin-left: 18px !important;
+}
+
+/* Hide the collapsed-menu button on wide screens */
+@media screen and (min-width: 1200px) {
+  .greedy-nav > button {
+    display: none !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: none !important;
+  }
+}
+
+/* Reduce side padding on smaller screens */
+@media screen and (max-width: 1500px) {
+  .masthead__inner-wrap {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+
+  .greedy-nav a {
+  font-size: 1.1rem;
+  padding: 0 14px;
+}
 }
 
 @media screen and (max-width: 1200px) {
   .masthead__inner-wrap {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .masthead__inner-wrap {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 }
 
