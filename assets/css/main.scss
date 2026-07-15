@@ -359,14 +359,14 @@ body.dark-mode .page__header {
 
 /* Start animation */
 #cartwheel-bear.is-running {
-  visibility: visible;
   opacity: 1;
-  animation: bear-run-across 8s linear forwards;
+  visibility: visible;
+  animation: bear-run-across 3s cubic-bezier(0.42, 0.0, 0.58, 1.0) forwards;
 }
 
 /* Slight bounce while moving */
 #cartwheel-bear.is-running img {
-  animation: bear-bounce .25s ease-in-out infinite alternate;
+  animation: bear-run-across 3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 /* Move completely across the screen */
