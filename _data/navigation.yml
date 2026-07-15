@@ -3,7 +3,7 @@ main:
     url: /
 
   - title: "CV"
-    url: /cv/
+    url: /Resume.pdf
 
   - title: "Portfolio"
     url: /portfolio/
@@ -11,5 +11,5 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - #title: "Projects"
-    #url: /projects/
+  - title: "Projects"
+    url: /projects/
