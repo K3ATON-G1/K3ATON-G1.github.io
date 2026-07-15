@@ -95,9 +95,17 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .sidebar.sticky {
-    top: 20px !important;      /* Distance from the navigation bar */
-    padding-top: 10px !important;
+  body .sidebar {
+    transform: translateX(-100px) !important;
+    overflow: visible !important;
+  }
+
+  body .sidebar.sticky {
+    top: 15px !important;
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+    max-height: none !important;
     padding-bottom: 20px !important;
   }
 }
