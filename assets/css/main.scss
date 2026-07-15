@@ -143,3 +143,11 @@ html[data-theme="dark"] body {
   background-color: transparent !important;
   background-image: none !important;
 }
+
+/* Semi-transparent background behind page content */
+.page__content,
+.page__header {
+  background: rgba(235, 235, 235, 0.75);
+  padding: 2rem;
+  border-radius: 10px;
+}
