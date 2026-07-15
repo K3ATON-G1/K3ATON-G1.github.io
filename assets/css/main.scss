@@ -45,21 +45,18 @@
    Page formatting
    ========================================================== */
 
-/* Center and enlarge page titles */
 .page__title {
   text-align: left !important;
   margin: 0 0 1.5rem 0 !important;
   font-size: 5rem;
 }
 
-/* Center the page-title container */
 .page__header {
   text-align: left !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
 
-/* Justify page text */
 .page__content,
 .page__content p {
   text-align: justify;
@@ -70,7 +67,11 @@
   line-height: 1.8;
 }
 
-/* Center author photograph */
+
+/* ==========================================================
+   Author profile formatting
+   ========================================================== */
+
 .author__avatar {
   text-align: center;
 }
@@ -81,19 +82,21 @@
   margin-right: auto;
 }
 
-/* Center author name and biography */
 .author__content {
   text-align: center;
 }
 
-/* Center images inside page content */
 .page__content img {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-/* Add space beside the main content on large screens */
+
+/* ==========================================================
+   Desktop page spacing
+   ========================================================== */
+
 @include breakpoint($large) {
   .page,
   .archive {
@@ -103,13 +106,9 @@
 
 
 /* ==========================================================
-   Extend the content only toward the right
+   Extend content only toward the right
    ========================================================== */
 
-/*
- * The left edge stays in its current position.
- * The content gains 300px of additional width on large screens.
- */
 @media screen and (min-width: 1200px) {
   .page__content {
     width: calc(100% + 300px) !important;
@@ -118,7 +117,6 @@
   }
 }
 
-/* Prevent horizontal overflow on narrower screens */
 @media screen and (max-width: 1199px) {
   .page__content {
     width: 100% !important;
@@ -128,7 +126,7 @@
 
 
 /* ==========================================================
-   Sidebar
+   Desktop sidebar
    ========================================================== */
 
 @media screen and (min-width: 1024px) {
@@ -174,7 +172,6 @@ html[data-theme="dark"] .sidebar {
   white-space: nowrap !important;
 }
 
-/* Top line: name */
 .masthead__menu-item--lg .site-name {
   display: block !important;
   color: #2e9368 !important;
@@ -183,7 +180,6 @@ html[data-theme="dark"] .sidebar {
   line-height: 1 !important;
 }
 
-/* Bottom line: Critical Geography */
 .masthead__menu-item--lg .site-tagline {
   display: block !important;
   color: inherit !important;
@@ -214,7 +210,6 @@ html[data-theme="dark"] .sidebar {
   min-height: 90px !important;
 }
 
-/* Main navigation row */
 .greedy-nav .visible-links {
   display: flex !important;
   align-items: center !important;
@@ -222,34 +217,34 @@ html[data-theme="dark"] .sidebar {
   flex-wrap: nowrap !important;
 }
 
-/* Keep title at its natural width */
 .masthead__menu-item--lg {
   flex: 0 0 auto !important;
   margin-right: 1in !important;
 }
 
-/* Let the navigation links share the remaining space */
 .greedy-nav .visible-links > li:not(.masthead__menu-item--lg) {
   flex: 1 1 auto !important;
   text-align: center !important;
   white-space: nowrap !important;
 }
 
-/* Keep the theme toggle visible */
 #theme-toggle {
   display: block !important;
   flex: 0 0 auto !important;
   margin-left: 0.25in !important;
 }
 
-/* Automatically scale navigation text and spacing */
 .greedy-nav a {
   font-size: clamp(0.9rem, 1.1vw, 1.15rem) !important;
   padding-left: clamp(6px, 0.7vw, 14px) !important;
   padding-right: clamp(6px, 0.7vw, 14px) !important;
 }
 
-/* Reduce masthead spacing on narrower screens */
+
+/* ==========================================================
+   Masthead scaling
+   ========================================================== */
+
 @media screen and (max-width: 1400px) {
   .masthead__inner-wrap {
     padding-left: 40px !important;
@@ -261,7 +256,6 @@ html[data-theme="dark"] .sidebar {
   }
 }
 
-/* Allow normal mobile collapse */
 @media screen and (max-width: 1099px) {
   .masthead__inner-wrap {
     padding-left: 15px !important;
@@ -304,7 +298,6 @@ html[data-theme="dark"] .sidebar {
    Topography backgrounds
    ========================================================== */
 
-/* Light background */
 html,
 body {
   background-color: #ffffff !important;
@@ -316,7 +309,6 @@ body {
   background-attachment: fixed !important;
 }
 
-/* Dark background */
 html[data-theme="dark"],
 html[data-theme="dark"] body {
   background-color: #111111 !important;
@@ -325,7 +317,11 @@ html[data-theme="dark"] body {
     !important;
 }
 
-/* Remove solid layers covering the background */
+
+/* ==========================================================
+   Transparent page layers
+   ========================================================== */
+
 .initial-content,
 #main,
 .page,
@@ -367,6 +363,149 @@ body.dark-mode .page__header {
 
 
 /* ==========================================================
+   Mobile profile layout
+   ========================================================== */
+
+@media screen and (max-width: 767px) {
+
+  /*
+   * Keep the profile section centered between the masthead
+   * and the bottom of the visible phone screen.
+   */
+  body .sidebar,
+  body .sidebar.sticky {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-height: calc(100vh - 155px) !important;
+    max-height: none !important;
+
+    margin: 0 auto !important;
+    padding: 1rem !important;
+
+    transform: none !important;
+
+    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* Hide the profile photograph on phones */
+  .author__avatar {
+    display: none !important;
+  }
+
+  /* Center the profile name and biography */
+  .author__content {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  /* Center the Follow button and its container */
+  .author__urls-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    text-align: center !important;
+  }
+
+  .author__urls-wrapper button,
+  .author__urls-wrapper .btn,
+  .author__urls-wrapper .author__urls-toggle {
+    display: block !important;
+    width: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    text-align: center !important;
+  }
+
+  /* Center the profile links when Follow is opened */
+  .author__urls {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 100% !important;
+
+    margin: 0.75rem auto 0 auto !important;
+    padding-left: 0 !important;
+
+    transform: none !important;
+    text-align: center !important;
+
+    overflow: visible !important;
+  }
+
+  .author__urls::before,
+  .author__urls::after {
+    display: none !important;
+  }
+
+  .author__urls li {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .author__urls li a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Restore normal content widths on phones */
+  .page,
+  .archive,
+  .page__inner-wrap,
+  .page__content,
+  .page__header {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .page,
+  .archive {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .page__content,
+  .page__header {
+    padding: 1.25rem !important;
+  }
+
+  .page__title {
+    font-size: clamp(2.5rem, 14vw, 4rem) !important;
+  }
+}
+
+
+/* ==========================================================
    Cartwheel Bear
    ========================================================== */
 
@@ -379,8 +518,6 @@ body.dark-mode .page__header {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-
-  /* Start completely outside the left edge */
   transform: translateX(-250px);
 }
 
@@ -390,19 +527,16 @@ body.dark-mode .page__header {
   height: auto;
 }
 
-/* Start the five-second crossing animation */
 #cartwheel-bear.is-running {
   visibility: visible;
   opacity: 1;
   animation: bear-run-across 5s linear forwards;
 }
 
-/* Add a small bounce while the GIF plays */
 #cartwheel-bear.is-running img {
   animation: bear-bounce 0.3s ease-in-out infinite alternate;
 }
 
-/* Move completely across and beyond the screen */
 @keyframes bear-run-across {
   from {
     transform: translateX(-250px);
@@ -413,7 +547,6 @@ body.dark-mode .page__header {
   }
 }
 
-/* Small vertical motion */
 @keyframes bear-bounce {
   from {
     transform: translateY(0);
@@ -424,7 +557,6 @@ body.dark-mode .page__header {
   }
 }
 
-/* Smaller bear on mobile devices */
 @media screen and (max-width: 700px) {
   #cartwheel-bear {
     width: 100px;
