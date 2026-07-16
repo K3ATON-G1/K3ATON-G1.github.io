@@ -73,7 +73,10 @@
    ========================================================== */
 
 .author__avatar {
-  text-align: center;
+  display: flex;
+  justify-content: center;   /* Horizontal centering */
+  align-items: center;       /* Vertical centering */
+  height: 100%;
 }
 
 .author__avatar img {
