@@ -135,56 +135,29 @@
    Desktop and tablet sidebar
    ========================================================== */
 
+/* Keep the sidebar fixed between 1 cm from the top and bottom */
 @media screen and (min-width: 768px) {
-
-  /*
-   * Center the full profile block vertically between the
-   * masthead and the bottom of the browser window.
-   */
   body .sidebar,
   body .sidebar.sticky {
-    position: relative !important;
-    top: auto !important;
+    position: sticky !important;
+    top: 1cm !important;
 
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
 
-    min-height: calc(100vh - 120px) !important;
-    max-height: none !important;
+    height: calc(100vh - 2cm) !important;
+    min-height: 0 !important;
+    max-height: calc(100vh - 2cm) !important;
 
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 
     overflow: visible !important;
-    overflow-x: visible !important;
-    overflow-y: visible !important;
-
     box-sizing: border-box !important;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  body .sidebar,
-  body .sidebar.sticky {
-    transform: translateX(-100px) !important;
-  }
-}
-
-.sidebar {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-html[data-theme="dark"] .sidebar {
-  background: rgba(0, 0, 0, 0.35);
-}
-
-
 /* ==========================================================
    Two-line masthead title
    ========================================================== */
@@ -216,7 +189,12 @@ html[data-theme="dark"] .sidebar {
   line-height: 1.1 !important;
   margin-top: 5px !important;
 }
-
+@media screen and (min-width: 1024px) {
+  body .sidebar,
+  body .sidebar.sticky {
+    transform: translateX(-100px) !important;
+  }
+}
 
 /* ==========================================================
    Masthead layout
